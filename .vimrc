@@ -64,3 +64,36 @@ inoremap <C-b> <Left>
 inoremap <C-n> <Down>
 inoremap <C-p> <Up>
 inoremap <C-f> <Right>
+
+
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/unite.vim'
+
+" NeoSnippets
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neosnippet'
+
+" Added For Ruby Programming
+NeoBundle 'AndrewRadev/switch.vim'
+NeoBundle 'tpope/vim-endwise'
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+NeoBundleCheck
