@@ -56,14 +56,14 @@ set tags+=tags;
 set tags+=./**/tags
 
 " 
-inoremap <C-g> <ESC>
+"inoremap <C-g> <ESC>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Del>
-inoremap <C-b> <Left>
-inoremap <C-n> <Down>
-inoremap <C-p> <Up>
-inoremap <C-f> <Right>
+"inoremap <C-b> <Left>
+"inoremap <C-n> <Down>
+"inoremap <C-p> <Up>
+"inoremap <C-f> <Right>
 
 
 if has('vim_starting')
@@ -90,6 +90,10 @@ NeoBundle 'Shougo/neosnippet'
 " Added For Ruby Programming
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'tpope/vim-endwise'
+
+" JS
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'clausreinke/typescript-tools'
 
 call neobundle#end()
 
