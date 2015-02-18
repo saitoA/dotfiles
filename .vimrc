@@ -94,6 +94,7 @@ NeoBundle 'tpope/vim-endwise'
 " JS
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'clausreinke/typescript-tools'
+NeoBundle 'jason0x43/vim-js-indent'
 
 call neobundle#end()
 
