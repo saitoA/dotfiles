@@ -1,0 +1,52 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
+# * https://atom.io/docs/latest/advanced/keymaps
+
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'atom-text-editor':
+  'ctrl-shift-up': 'editor:add-selection-above'
+  'ctrl-shift-down': 'editor:add-selection-below'
+  'ctrl-t': 'find-and-replace:toggle'
+  'ctrl-j': 'fuzzy-finder:toggle-buffer-finder'
+
+'atom-text-editor.vim-mode.command-mode':
+  'ctrl-[': '!unset'
+
+'atom-text-editor.vim-mode.insert-mode':
+  'ctrl-h': 'core:backspace'
+  'ctrl-n': 'core:move-down'
+  'ctrl-p': 'core:move-up'
+  'ctrl-f': 'core:move-right'
+  'ctrl-b': 'core:move-left'
+  'ctrl-a': 'editor:move-to-beginning-of-screen-line'
+  'ctrl-e': 'editor:move-to-end-of-screen-line'
+
+'atom-text-editor:not(.mini).autocomplete-active':
+  'enter': 'autocomplete-plus:confirm'
+  'down': 'autocomplete-plus:select-next'
+  'ctrl-n': 'autocomplete-plus:select-next'
+  'tab': 'autocomplete-plus:select-next'
+  'up': 'autocomplete-plus:select-previous'
+  'ctrl-p': 'autocomplete-plus:select-previous'
+  'shift-tab': 'autocomplete-plus:select-previous'

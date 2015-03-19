@@ -1,0 +1,15 @@
+"*":
+  editor:
+    invisibles: {}
+    fontFamily: "consolas"
+    fontSize: 27
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "62666491-f760-a6ea-f89a-1c17a047503c"
+  welcome:
+    showOnStartup: false
+  "autocomplete-plus": {}
