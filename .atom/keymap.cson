@@ -44,9 +44,8 @@
 
 'atom-text-editor:not(.mini).autocomplete-active':
   'enter': 'autocomplete-plus:confirm'
-  'down': 'autocomplete-plus:select-next'
-  'ctrl-n': 'autocomplete-plus:select-next'
-  'tab': 'autocomplete-plus:select-next'
-  'up': 'autocomplete-plus:select-previous'
-  'ctrl-p': 'autocomplete-plus:select-previous'
-  'shift-tab': 'autocomplete-plus:select-previous'
+  'down': 'unset!'
+  'tab': 'unset!'
+  'up': 'unset!'
+  'ctrl-p': 'core:move-up'
+  'ctrl-n': 'core:move-down'
