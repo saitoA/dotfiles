@@ -28,10 +28,20 @@
   'ctrl-shift-up': 'editor:add-selection-above'
   'ctrl-shift-down': 'editor:add-selection-below'
   'ctrl-t': 'find-and-replace:toggle'
-  'ctrl-j': 'fuzzy-finder:toggle-buffer-finder'
+  'alt-a': 'editor:move-to-beginning-of-screen-line'
+  'alt-e': 'editor:move-to-end-of-screen-line'
 
 'atom-text-editor.vim-mode.command-mode':
   'ctrl-[': '!unset'
+
+'atom-workspace':
+  'ctrl-n': 'core:move-down'
+  'ctrl-h': 'core:backspace'
+  'ctrl-p': 'core:move-up'
+  'ctrl-f': 'core:move-right'
+  'ctrl-b': 'core:move-left'
+  'ctrl-alt-b': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-alt-p': 'fuzzy-finder:toggle-file-finder'
 
 'atom-text-editor.vim-mode.insert-mode':
   'ctrl-h': 'core:backspace'
@@ -43,8 +53,8 @@
   'ctrl-e': 'editor:move-to-end-of-screen-line'
 
 'atom-text-editor:not(.mini).autocomplete-active':
-  'enter': 'autocomplete-plus:confirm'
   'down': 'unset!'
+  'enter': 'autocomplete-plus:confirm'
   'tab': 'unset!'
   'up': 'unset!'
   'ctrl-p': 'core:move-up'
