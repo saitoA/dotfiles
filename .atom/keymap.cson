@@ -30,6 +30,7 @@
   'ctrl-t': 'find-and-replace:toggle'
   'alt-a': 'editor:move-to-beginning-of-screen-line'
   'alt-e': 'editor:move-to-end-of-screen-line'
+  'ctrl-alt-f': 'atom-beautify:beautify-editor'
 
 'atom-text-editor.vim-mode.command-mode':
   'ctrl-[': '!unset'
