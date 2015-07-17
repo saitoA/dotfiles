@@ -36,11 +36,6 @@
   'ctrl-[': '!unset'
 
 'atom-workspace':
-  'ctrl-n': 'core:move-down'
-  'ctrl-h': 'core:backspace'
-  'ctrl-p': 'core:move-up'
-  'ctrl-f': 'core:move-right'
-  'ctrl-b': 'core:move-left'
   'ctrl-alt-b': 'fuzzy-finder:toggle-buffer-finder'
   'ctrl-alt-p': 'fuzzy-finder:toggle-file-finder'
 
